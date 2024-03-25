@@ -16,16 +16,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playball&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         
         <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head> 
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm">
+            <!-- HEADER -->
+            <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
                     <!-- Logo -->
                     <a class="navbar-brand" href="#">
-                        <img src="logo.png" alt="Avatar Logo" style="width:40px;">
+                        <img src="./img/whiteicon.png" alt="Avatar Logo" style="width:40px;">
                     </a>
 
                     <!-- Hamburger Button -->
@@ -36,18 +39,24 @@
                     <!-- Nav Items -->
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                          </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Projects
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                  <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
                       </div>
                 </div>
@@ -135,11 +144,13 @@
                     <h5 class="display-5">Display h5 - Playball (3rem)</h5>
                     <h5 class="display-6">Display h6 - Playball (2.5rem)</h5>
                     <br>
-                    <h1>Bootstrap h1 - Playfair Display (2.5rem)</h1>
-                    <h2>Bootstrap h2 - Playfair Display (2rem)</h2>
-                    <h3>Bootstrap h3 - Playfair Display (1.75rem)</h3>
-                    <h4>Bootstrap h4 - Playfair Display (1.5rem)</h4>
-                    <h5>Bootstrap h5 - Playfair Display (1.25rem)</h5>
+                    <h1>Bootstrap h1 - Red Hat Display (2.5rem)</h1>
+                    <h2>Bootstrap h2 - Red Hat Display (2rem)</h2>
+                    <h3>Bootstrap h3 - Red Hat Display (1.75rem)</h3>
+                    <h4>Bootstrap h4 - Red Hat Display (1.5rem)</h4>
+                    <h5>Bootstrap h5 - Red Hat Display (1.25rem)</h5>
+                    <br>
+                    <h5>Logo Font - Freestyle Script</h5>
                 </section>
             
                 <section class="element">
@@ -172,12 +183,12 @@
             </section>
         </div>
 
-        <footer>
-            <div class="footer-left">
-                <a class="logo" href="index.html"><img src="./img/LogoText.png" alt="Logo"></a>
+        <footer class="container-fluid d-flex bg-dark">
+            <div class="container w-40">
+                <a href="index.html"><img src="./img/whiteicon.png" class="img-fluid" alt="Logo"></a>
             </div>
 
-            <div class="footer-right">
+            <div class="container w-60">
                 <div class="socials">
                     <a href="#"><img class="socials-icon" src="./img/socials/socialsX.png" alt="Twitter Icon"></a>
                     <a href="#"><img class="socials-icon" src="./img/socials/socialsFB.png" alt="Facebook Icon"></a>
@@ -188,15 +199,12 @@
                     <li><a class="text-link" href="contact.html">Contact</a></li>
                     <li><a class="text-link" href="feedback.html">Give Us Feedback</a></li>
                     <li>----------------------------</li>
-                    <li><a class="text-link" href="kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="text-link" href="https://kybre.github.io">Previous Portfolio</a></li>
                     <li><a class="text-link" href="elements.html">Style Guide</a></li>
                     <li><a class="text-link" href="elements.html#citations">Citations</a></li>
                     <li><a class="text-link" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
                 </ul>
             </div>
         </footer>
-
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

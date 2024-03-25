@@ -108,7 +108,7 @@ gameData.forEach((data) => {
 })
 
 otherData.forEach((data) => {
-	const parent = document.querySelector("#ux");
+	const parent = document.querySelector("#other");
 	appendContent(parent, data);
 })
 

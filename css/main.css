@@ -9,7 +9,7 @@ body{
     overflow-wrap: break-word;
 }
 
-.element{
+.element, .container{
     margin-top: 2rem;
 }
 
@@ -20,7 +20,7 @@ body{
 }
 
 nav a{
-    font-family: 'Lato';
+    font-family: 'Red Hat Display';
 }
 
 /* ----------------- COMBINED ELEMENTS -------------------*/
