@@ -9,6 +9,10 @@ body{
     overflow-wrap: break-word;
 }
 
+.element{
+    margin-top: 2rem;
+}
+
 /* ----------------- TEXT ELEMENTS -------------------*/
 
 .bold{
