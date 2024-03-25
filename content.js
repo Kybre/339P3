@@ -124,17 +124,16 @@ function appendContent(parent, {img, title, ctgr, content, tools, link}){
 
 	let proj = document.createElement("h2");
 	proj.innerText = title;
-	proj.style.marginBottom = "0";
 
-	let cat = document.createElement("div");
+	let cat = document.createElement("h5");
 	cat.innerText = ctgr;
 	cat.style.fontStyle = "italic";
 	cat.style.marginBottom = "1rem";
 
-	let txt = document.createElement("div");
+	let txt = document.createElement("p");
 	txt.innerText = content;
 
-	let tol = document.createElement("div");
+	let tol = document.createElement("p");
 	tol.innerText = "Tools Used: " + tools;
 	tol.style.fontStyle = "italic";
 	tol.style.marginBottom = "1rem";

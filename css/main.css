@@ -23,6 +23,11 @@ nav a{
     font-family: 'Red Hat Display';
 }
 
+/* ----------------- HEADER / FOOTER -------------------*/
+footer{
+    margin-top: 4rem;
+}
+
 /* ----------------- COMBINED ELEMENTS -------------------*/
 
 .item{
