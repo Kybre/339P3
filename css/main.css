@@ -27,6 +27,10 @@ nav a{
     font-family: 'Red Hat Display';
 }
 
+.nav-link{
+    transition: color 0.25s ease-in-out;
+}
+
 /* ----------------- HEADER / FOOTER -------------------*/
 .navbar-brand, .navbar-brand img{
     max-width: 4rem;
@@ -81,6 +85,9 @@ hr{
 
 /* ----------------- INTERACTIVE ELEMENTS -------------------*/
 
+.proj-link img{
+    max-width: 3rem !important;
+}
 
 /* ----------------- COMBINED ELEMENTS -------------------*/
 

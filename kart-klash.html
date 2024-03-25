@@ -8,6 +8,7 @@
         <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
         <meta content="width=device-width, initial-scale=1" name="viewport"> 
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
         <!-- original font links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,8 +63,144 @@
         </header>
 
         <!-- CONTENT -->
-        <div class="container"></div>
-        
+        <div class="container">
+            <section class="proj-intro">
+                <h1 class="display-1">Kart Klash</h1>
+                <h2>VR Design/Development Project</h2>
+                <br>
+                <h5>Role: Gameplay Designer/Developer, UI Designer</h5>
+                <br>
+                <h5>Collaborators:</h5>
+                <ul>
+                    <li>EJ Nicholas: Gameplay Designer/Developer, Tech Lead</li>
+                    <li>Enoch Hsieh: Level Designer, 3D & Environment Artist</li>
+                    <li>Ricky Lin: Sound Designer, Gameplay Programmer</li>
+                    <li>Irene Gao: Environment Artist</li>
+                    <li>Kajal Kajal: Web and Graphic Designer</li>
+                </ul>
+                <br>
+                <h5>Tools Used:</h5>
+                <ul>
+                    <li>Unity (C#, Unity URP, Shader Graph, UnityVR)</li>
+                    <li>Figma</li>
+                </ul>
+                <br>
+                <h5>Duration: 4 Months (September 2023 - December 2023)</h5>
+            </section>
+
+            <section id="proj-video">
+                <h2>Project Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ry1Xo6tzIM?si=qJNj0-ZpidvBycN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="proj-desc">
+                <h2>Project Description</h2>
+                <p>
+                    Kart Klash combines the thrilling experience of go-kart racing and the satisfaction of shooting targets with a gun in a VR environment. As players race, they need to balance controlling their vehicle and aiming their gun to get an advantage. There are no rules on these roads! Laser down racers or ram them away as you get transported through multiple fascinating settings. Enter into tight races, take shots at other drivers and be absorbed into the world of Kart Klash.
+                </p>
+                <p>
+                    This game was created as part of IAT 445 - Immersive Experiences at SFU's Interactive Arts and Technology Program. My main tasks within this project include:
+                </p>
+                <ul>
+                    <li>Shooting Mechanics</li>
+                    <li>Enemy AI</li>
+                    <li>Graphics, Effects & Shaders</li>
+                    <li>UI Design</li>
+                </ul>
+                <p>
+                    Throughout this project, I aimed to take my existing knowledge of Unity's URP system and apply it to a VR setting, while aiming to deliver a full-scale project to the fullest of my capabilities.
+                </p>
+            </section>
+
+            <h2>Shooting Mechanics</h2>
+            <video width="640" height="360" controls muted>
+                <source src="img/KartKlash/player-shoot-demo.mp4" type="video/mp4" alt="Demo Video showing player shooting features, recorded during the implementation of shootable targets.">
+                  Video cannot be played.
+            </video>
+            <figcaption>
+                Demo Video showing player shooting features, recorded during the implementation of shootable targets.
+            </figcaption>
+            <br>
+            <p>
+                The player's shooting mechanic is the one of two key features that allows the player to interact with the world around them (the other being driving). During the conceptual phase, many iterations were designed to satisfy many different goals for the game, but we chose to settle on using a simple hitscan weapon with clear indicators for every interaction (outline, particles, etc). 
+            </p>
+
+            <p>
+                This allows the shooting mechanic to be easily understood, with the goal of ultimately lowering the player's cognitive load such that they don't have to worry about external factors like bullet trajectory, while being given feedback that clearly points to the effects their shots have on enemies and shootable targets - whether their aim is true, whether a shot hits or not, and more. 
+            </p>
+
+            <h2>Enemy AI</h2>
+            <video width="640" height="360" controls muted>
+                <source src="img/KartKlash/ai-demo.mp4" type="video/mp4" alt="Demo Video showing early NavMesh implementation with adjusted physics parameters to make the movement seem more vehicle-like.">
+                  Video cannot be played.
+            </video>
+            <figcaption>
+                Demo Video showing early NavMesh implementation with adjusted physics parameters to make the movement seem more vehicle-like.
+            </figcaption>
+            <br>
+            <p>
+                As a team, we decided that enemy AI was necessary in order to introduce a chaotic and fast-pased experience for the player. Having worked with NavMeshes previously in <a href="akimbo-corps.html">Akimbo Corps,</a> I was confident in my ability to implement the package into our current project.
+            </p>
+
+            <p>
+                Similar to Akimbo Corps, this implementation utilizes a incrementing checkpoint system that guides the NavMeshAI from one point to another. Checkpoints for a given map are manually assigned to a list, which are then referenced by both the player and enemy GameObjects to determine their behaviours. As the checkpoints were made as track-wide hitboxes to account for the player's driving, enemies are given an extended stopping distance radius and randomized destination coordinates within the hitbox to ensure that enemies would not drive the same when compared to each other.
+            </p>
+            <video width="640" height="360" controls muted>
+                <source src="img/KartKlash/ai-shoot-demo.mp4" type="video/mp4" alt="Demo Video sent to the team’s Discord showing AI Shooting Tracking and Animation.">
+                  Video cannot be played.
+            </video>
+            <figcaption>
+                Demo Video sent to the team’s Discord showing AI Shooting Tracking and Animation.
+            </figcaption>
+            <br>
+            <p>
+                The main function of enemy shooting is to provide the player with a higher level of opposition while racing in order to generate more competitive tension. As a behaviour, being shot by an enemy depletes the player's health - and when their health reaches 0, they experience a lockout period that prevents them from driving, indicated by a desaturation filter covering their view, as well as the animation of their health bar slowly refilling.
+            </p>
+
+            <p>
+                When animating the enemies to track the player, we ran into issues with the model that prohibited me from using Unity's IK animation system, which would've been the idea solution. However, this was alleviated by manually using vector math to track the player's position and adjust relevant parts of the enemy to face the player.
+            </p>
+
+            <h2>Graphics, Effects & Shaders</h2>
+            <video width="640" height="360" controls muted>
+                <source src="img/KartKlash/urp-pp-demo.mp4" type="video/mp4" alt="URP Post-Processing Demo Video.">
+                  Video cannot be played.
+            </video>
+            <figcaption>
+                URP Post-Processing Demo Video.
+            </figcaption>
+            <br>
+            <p>
+                In creating the look for this game, I wanted to create a retro arcade aesthetic while reducing the motion sickness that normally comes with certain effects like grain and posterization. To that end, I created a Toon Shader Graph within Unity with adjustable parameters for Color Depth and Effect Opacity, and underwent a lot of testing to ensure that the final effect captured retro visuals while not inducing motion sickness for a player.
+            </p>
+
+            <p>
+                In terms of post-processing and particles, my main goal was to try and make colors pop as much as I could in order to mimic the brightness and lower color fidelity of older displays. To this end, a universal Post-Processing Volume was used to amplify the contrast of colors within our maps, and particle colors were chosen to contrast as much as possible with existing assets.
+            </p>
+
+            <h2>UI Design</h2>
+            <img src="img/kartKlash/hit-indicator.png" alt="HUD Hit Indicator.">
+            <figcaption>HUD Hit Indicator</figcaption>
+
+            <img src="img/kartKlash/ui-screen.png" style="width: 40%;" alt="Final UI in Action.">
+            <figcaption>Final UI in Action</figcaption>
+            <br>
+            <p>
+                In designing the final UI for Kart Klash, my main challenge was in ensuring that player can quickly glance to see any important information within their peripheral vision, while ensuring they can see as far ahead as possible as drivers. In addition, a blue speed bar was added near the end of development so that players are clearly able to qualtify their motion, and recognize the tangible benefit from destroying the shootables across the map.
+            </p>
+
+            <h2>Takeaways</h2>
+            <p>
+                Overall, I am extremely proud to have worked on this project with an outstanding team, and I believe this project strongly showcases our strengths.
+            </p>
+            <p>
+                Through this project, I believe I've made significant strides in my abilities within Unity, as well as my understanding of their render pipelines, post-processing systems, particles, and especially their VR package. As a designer, I have also gained a more in-depth understanding on how to design interactions within immersive environments, VR or not, and was able to further sharpen my understanding of how players interact with games and their core mechanics.
+            </p>
+
+            <h2>Project Links</h2>
+            <a href="https://github.com/EJNicolas/KartKlash" class="proj-link"><img src="img/githubIcon.png" alt="GitHub Link for KartKlash"></a>
+        </div>
+
         <!-- FOOTER -->
         <footer class="container-fluid d-flex bg-dark">
             <div class="container w-20">
