@@ -8,6 +8,7 @@
         <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
         <meta content="width=device-width, initial-scale=1" name="viewport"> 
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
         <!-- original font links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,73 +21,89 @@
 
     <body>
         <!-- HEADER -->
-        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="Avatar Logo" style="width:40px;">
-                </a>
+        <header>
+            <!-- HEADER -->
+            <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/whiteicon.png" alt="Avatar Logo">
+                    </a>
 
-                <!-- Hamburger Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!-- Nav Items -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Projects
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="index.html#games">Games</a></li>
-                              <li><a class="dropdown-item" href="index.html#other">Other</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                  </div>
-            </div>
-        </nav>
+                    <!-- Nav Items -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                  <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html#cv">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+            </nav>
+        </header>
         <!-- CONTENT -->
             <div class="container">
-                <h2 class="display-2">Hi, I'm Herman!</h2>
-                <h2>UX Designer · Game Designer</h2>
+                <section id="bio">
+                    <h2 class="display-2">Hi, I'm Herman!</h2>
+                    <h2>UX Designer · Game Designer</h2>
+    
+                    <p>
+                        As a designer, I focus on creating experiences for a player/user with tangible objectives - whether refining the interactions that deliver a grand narrative, or making everyday interactions as seamless and unobtrusive as possble so that users can focus on what's really important. I constantly try to challenge myself by pushing the boundaries of what I'm capable of - to learn, refine, design, repeat - and to design features that betters the human experience.
+                    </p>
+    
+                    <p>
+                        I use a variety of tools in my work, including but not limited to: Unity, Figma, HTML/CSS/JS and the Adobe Creative Suite. If any of my projects or skills interest you, feel free to reach out!
+                    </p>
+                </section>
 
-                <p>
-                    
-                </p>
+                <section id="cv">
+                    <h2>Resume</h2>
+                    <!-- Download as PDF Button -->
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Information</h2>
+                </section>
             </div>
         <!-- FOOTER -->
-        <footer>
-            <div class="footer-left">
-                <a class="logo" href="index.html"><img src="./img/LogoText.png" alt="Logo"></a>
+        <footer class="container-fluid d-flex bg-dark">
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="#"><img class="socials-icon" src="./img/githubIcon.png" alt="GitHub Icon"></a>
+                    <a href="#"><img class="socials-icon" src="./img/linkedinIcon.png" alt="LinkedIn Icon"></a>
+                </div>
             </div>
 
-            <div class="footer-right">
-                <div class="socials">
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsX.png" alt="Twitter Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsFB.png" alt="Facebook Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsInsta.png" alt="Intagram Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsMap.png" alt="Maps Icon"></a>
-                </div>
+            <div class="container w-80">
                 <ul>
-                    <li><a class="text-link" href="contact.html">Contact</a></li>
-                    <li><a class="text-link" href="feedback.html">Give Us Feedback</a></li>
-                    <li>----------------------------</li>
-                    <li><a class="text-link" href="kybre.github.io">Previous Portfolio</a></li>
-                    <li><a class="text-link" href="elements.html">Style Guide</a></li>
-                    <li><a class="text-link" href="elements.html#citations">Citations</a></li>
-                    <li><a class="text-link" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                    <li><a class="link-footer text-white-50" href="about.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="about.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
                 </ul>
             </div>
         </footer>

@@ -13,6 +13,10 @@ body{
     margin-top: 2rem;
 }
 
+img{
+    max-width: 90vw;
+}
+
 /* ----------------- TEXT ELEMENTS -------------------*/
 
 .bold{
@@ -24,11 +28,63 @@ nav a{
 }
 
 /* ----------------- HEADER / FOOTER -------------------*/
-footer{
-    margin-top: 4rem;
+.navbar-brand, .navbar-brand img{
+    max-width: 4rem;
 }
 
+footer{
+    margin-top: 4rem;
+    padding: 2rem 4rem !important;
+}
+
+.footer-icon{
+    max-width: 6rem !important;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.socials-icon{
+    max-width: 2.5rem;
+}
+
+hr{
+    border-width: 2px !important;
+    width: 50%;
+    color: #FFFFFFAA !important;
+}
+
+.link-footer{
+    font-family: 'Red Hat Display';
+    text-decoration: none;
+}
+
+.link-footer:hover{
+    color: #FFFFFFAA !important;
+}
+
+@media screen and (max-width: 1000px) {
+    footer{
+        flex-direction: column;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ----------------- INTERACTIVE ELEMENTS -------------------*/
+
+
 /* ----------------- COMBINED ELEMENTS -------------------*/
+
+/* Index Banner Items */
 
 .item{
     margin-top: 2rem;
@@ -56,4 +112,18 @@ footer{
 
 .item-desc{
     margin-left: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .item a{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .item-desc{
+        margin-left: 0;
+    }
+    .item img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }

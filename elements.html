@@ -27,8 +27,8 @@
             <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
                     <!-- Logo -->
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/whiteicon.png" alt="Avatar Logo" style="width:40px;">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/whiteicon.png" alt="Avatar Logo">
                     </a>
 
                     <!-- Hamburger Button -->
@@ -43,19 +43,19 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Projects
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
                                   <li><a class="dropdown-item" href="index.html#games">Games</a></li>
                                   <li><a class="dropdown-item" href="index.html#other">Other</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Resume</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Me</a>
+                                <a class="nav-link" href="about.html#cv">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="about.html#contact">Contact</a>
                             </li>
                         </ul>
                       </div>
@@ -75,12 +75,28 @@
 
                 <section class="element">
                     <h3>Navigation Links</h3>
-                    <nav>
-                        <div class="navi-links">       
-                            <a class="nav-link" href="#">Navigation A</a>
-                            <a class="nav-link" href="#">Navigation B</a>
-                            <a class="nav-link" href="#">Navigation C</a>
-                        </div> 
+                    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+                        <div class="container-fluid">       
+                            <!-- Hamburger Button -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+        
+                            <!-- Nav Items -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nav A</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nav B</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nav C</a>
+                                    </li>
+                                </ul>
+                              </div>
+                        </div>
                     </nav>
                 </section>
 
@@ -180,18 +196,93 @@
 
             <section id="colors" class="element">
                 <h2><u>COMBINED ELEMENTS</u></h2>
-                <div class="item">
-                    <a href="#" class="item-content">
-                        <img src="https://placehold.co/600x400?text=Placeholder+Image">
-                        <div class="item-desc">
-                            <h2>Project Title</h2>
-                            <h5 class="fst-italic">Project Category</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus consequat vestibulum. Nulla orci est, aliquam rutrum tincidunt quis, pretium nec leo. Sed sit amet nibh sed eros dictum aliquam ut vitae ipsum. Nam est elit, consectetur sed placerat ac, aliquet quis ex.
-                            <p class="fst-italic">Project Tools</p>
+
+                <section class="element">
+                    <h3>Main Navigation</h3>
+                    <header>
+                        <!-- HEADER -->
+                        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+                            <div class="container-fluid">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="./img/whiteicon.png" alt="Avatar Logo">
+                                </a>
+            
+                                <!-- Hamburger Button -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+            
+                                <!-- Nav Items -->
+                                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Projects
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                                              <li><a class="dropdown-item" href="index.html#games">Games</a></li>
+                                              <li><a class="dropdown-item" href="index.html#other">Other</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html#cv">Resume</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </nav>
+                    </header>
+                </section>
+
+                <section class="element">
+                    <h3>Footer</h3>
+
+                    <footer class="container-fluid d-flex bg-dark">
+                        <div class="container w-20">
+                            <a href="index.html"><img src="./img/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                            <div class="socials">
+                                <a href="#"><img class="socials-icon" src="./img/githubIcon.png" alt="GitHub Icon"></a>
+                                <a href="#"><img class="socials-icon" src="./img/linkedinIcon.png" alt="LinkedIn Icon"></a>
+                            </div>
                         </div>
-                    </a>
-                </div>
+            
+                        <div class="container w-80">
+                            <ul>
+                                <li><a class="link-footer text-white-50" href="about.html#cv">Resume</a></li>
+                                <li><a class="link-footer text-white-50" href="about.html#contact">Contact</a></li>
+                                <hr>
+                                <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                                <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                                <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                                <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </section>
+
+                <section class="element">
+                    <h3>Project Banners</h3>
+
+                    <div class="item">
+                        <a href="#" class="item-content">
+                            <img src="https://placehold.co/600x400?text=Placeholder+Image">
+                            <div class="item-desc">
+                                <h2>Project Title</h2>
+                                <h5 class="fst-italic">Project Category</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus consequat vestibulum. Nulla orci est, aliquam rutrum tincidunt quis, pretium nec leo. Sed sit amet nibh sed eros dictum aliquam ut vitae ipsum. Nam est elit, consectetur sed placerat ac, aliquet quis ex.
+                                <p class="fst-italic">Project Tools</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
             </section>
 
             <section id="citations" class="element">
@@ -203,25 +294,23 @@
         </div>
 
         <footer class="container-fluid d-flex bg-dark">
-            <div class="container w-40">
-                <a href="index.html"><img src="./img/whiteicon.png" class="img-fluid" alt="Logo"></a>
+            <div class="container w-20">
+                <a href="index.html"><img src="./img/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <div class="socials">
+                    <a href="#"><img class="socials-icon" src="./img/githubIcon.png" alt="GitHub Icon"></a>
+                    <a href="#"><img class="socials-icon" src="./img/linkedinIcon.png" alt="LinkedIn Icon"></a>
+                </div>
             </div>
 
-            <div class="container w-60">
-                <div class="socials">
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsX.png" alt="Twitter Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsFB.png" alt="Facebook Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsInsta.png" alt="Intagram Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/socials/socialsMap.png" alt="Maps Icon"></a>
-                </div>
+            <div class="container w-80">
                 <ul>
-                    <li><a class="text-link" href="contact.html">Contact</a></li>
-                    <li><a class="text-link" href="feedback.html">Give Us Feedback</a></li>
-                    <li>----------------------------</li>
-                    <li><a class="text-link" href="https://kybre.github.io">Previous Portfolio</a></li>
-                    <li><a class="text-link" href="elements.html">Style Guide</a></li>
-                    <li><a class="text-link" href="elements.html#citations">Citations</a></li>
-                    <li><a class="text-link" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
+                    <li><a class="link-footer text-white-50" href="about.html#cv">Resume</a></li>
+                    <li><a class="link-footer text-white-50" href="about.html#contact">Contact</a></li>
+                    <hr>
+                    <li><a class="link-footer text-white-50" href="https://kybre.github.io">Previous Portfolio</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html">Style Guide</a></li>
+                    <li><a class="link-footer text-white-50" href="elements.html#citations">Citations</a></li>
+                    <li><a class="link-footer text-white-50" href="https://github.com/Kybre/339P3">GitHub Repository</a></li>
                 </ul>
             </div>
         </footer>
