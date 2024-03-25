@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin: 0;
+    background-color: #FFFAFA;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+/* ----------------- TEXT ELEMENTS -------------------*/
+
+h1{
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h4{
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.bold{
+    font-weight: 500;
+}
