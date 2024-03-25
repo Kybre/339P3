@@ -22,3 +22,32 @@ body{
 nav a{
     font-family: 'Lato';
 }
+
+/* ----------------- COMBINED ELEMENTS -------------------*/
+
+.item{
+  display: flex;
+  flex-direction: column;
+}
+
+.item a{
+  display: flex;
+  padding: 2rem 2rem 2rem 2rem;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 3px solid #DDDDDD;
+  background-color: #F0F0F0;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.item a:hover{
+  background-color: #CCCCCC;
+}
+
+.item img{
+  width: calc(40% - 1.5rem);
+}
+
+.item-desc{
+  margin-left: 2rem;
+}
