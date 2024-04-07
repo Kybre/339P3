@@ -114,10 +114,11 @@ otherData.forEach((data) => {
 
 function appendContent(parent, {img, title, ctgr, content, tools, link}){
 	let div = document.createElement("a");
-
-	let contentDiv = document.createElement("div");
 	div.href = link;
-	contentDiv.className = "item-desc";
+	div.className = "item-content";
+
+	let descDiv = document.createElement("div");
+	descDiv.className = "item-desc";
 
 	let image = document.createElement("img");
 	image.src = img;
@@ -149,10 +150,10 @@ function appendContent(parent, {img, title, ctgr, content, tools, link}){
 	</div>
 	*/
 	div.appendChild(image);
-	div.appendChild(contentDiv);
-	contentDiv.appendChild(proj);
-	contentDiv.appendChild(cat);
-	contentDiv.appendChild(txt);
-	contentDiv.appendChild(tol);
+	div.appendChild(descDiv);
+	descDiv.appendChild(proj);
+	descDiv.appendChild(cat);
+	descDiv.appendChild(txt);
+	descDiv.appendChild(tol);
 	parent.appendChild(div);
 }

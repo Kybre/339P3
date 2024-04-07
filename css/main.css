@@ -71,7 +71,7 @@ hr{
     color: #FFFFFFAA !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     footer{
         flex-direction: column;
     }
@@ -81,6 +81,18 @@ hr{
         padding-left: 0;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    iframe, video{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    iframe{
+        height: 240px;
     }
 }
 
@@ -95,13 +107,21 @@ hr{
 /* Index Banner Items */
 
 .item{
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    
+}
+
+.item h1{
+    margin-bottom: 0;
+    border-bottom: 3px solid #DDDDDD;
 }
 
 .item a{
     display: flex;
+    gap: 2rem;
+    align-items: center;
     padding: 2rem 6rem;
     text-decoration: none;
     color: #000000;
@@ -118,20 +138,45 @@ hr{
     width: calc(40% - 1.5rem);
 }
 
-.item-desc{
-    margin-left: 2rem;
+.hero{
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../img/KartKlash/title.png");
+    background-size: cover;
+    background-position: center;
+    align-items: end;
 }
 
-@media screen and (max-width: 1000px) {
+.hero h1, .hero h2{
+    color: #FAFAFA;
+}
+
+@media screen and (max-width: 992px) {
+    .item img{
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .item a{
         flex-direction: column;
+        gap: 0;
         padding: 2rem;
     }
     .item-desc{
         margin-left: 0;
+        width: 75% !important;
+        align-self: center;
     }
     .item img{
-        width: 100% !important;
         margin-bottom: 2rem;
+        width: 75% !important;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .item img, .item-desc{
+        width: 100% !important;
     }
 }
