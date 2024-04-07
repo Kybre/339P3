@@ -28,14 +28,14 @@ let otherData = [
 ]
 
 let gameData = [
-//	{
-//		img:"./img",
-//		title:"Kart Klash",
-//		ctgr:"Game Design/Development Project",
-//		content:"[Page WIP]",
-//		tools:"Unity, C#",
-//		link:"",
-//	},
+	{
+		img:"./img/KartKlash/title.png",
+		title:"Kart Klash",
+		ctgr:"Game Design/Development Project",
+		content:"Kart Klash is a VR game that combines the thrilling experience of go-kart racing and the satisfaction of shooting targets and other racers.",
+		tools:"Unity, C#",
+		link:"kart-klash.html",
+	},
 //	{
 //		img:"./img",
 //		title:"Akimbo Corps",
@@ -121,6 +121,9 @@ function appendContent(parent, {img, title, ctgr, content, tools, link}){
 
 	let image = document.createElement("img");
 	image.src = img;
+	image.style.width = "30%";
+	image.style.height = "20%";
+	image.style.objectFit = "cover";
 
 	let proj = document.createElement("h2");
 	proj.innerText = title;

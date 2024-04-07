@@ -76,8 +76,9 @@ hr{
         flex-direction: column;
     }
 
-    footer .container{
+    footer .container, footer ul{
         display: flex;
+        padding-left: 0;
         flex-direction: column;
         align-items: center;
     }
@@ -130,7 +131,7 @@ hr{
         margin-left: 0;
     }
     .item img{
-        width: 100%;
+        width: 100% !important;
         margin-bottom: 2rem;
     }
 }
