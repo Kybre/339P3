@@ -595,14 +595,14 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.925rem + 8.1vw);
+  font-size: calc(1.725rem + 5.7vw);
   font-family: "Playball";
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 
