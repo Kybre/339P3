@@ -23,7 +23,7 @@
         <!-- HEADER -->
         <header>
             <!-- HEADER -->
-            <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
                 <div class="container-fluid">
                     <!-- Logo -->
                     <a class="navbar-brand" href="index.html">
@@ -63,14 +63,16 @@
         </header>
 
         <!-- CONTENT -->
-        <div class="container-fluid hero">
-            <div class="container">
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/KartKlash/title.png');">
+            <div class="container hero-titles">
                 <h1 class="display-1">Kart Klash</h1>
-                <h2>VR Design/Development Project</h2>
+                <h2>VR Design / Development Project</h2>
             </div>
         </div>
         <div class="container">
             <section class="proj-section" id="project-intro">
+                <h2>Project Overview</h2>
+                <br>
                 <h5>Role: Gameplay Designer/Developer, UI Designer</h5>
                 <br>
                 <h5>Collaborators:</h5>
@@ -93,7 +95,8 @@
 
             <section class="proj-section" id="project-video">
                 <h2>Project Video</h2>
-                <iframe width="50%" height="360px" src="https://www.youtube.com/embed/4Ry1Xo6tzIM?si=qJNj0-ZpidvBycN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <iframe width="640px" height="360px" src="https://www.youtube.com/embed/4Ry1Xo6tzIM?si=qJNj0-ZpidvBycN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
             <section class="proj-section" id="project-desc">
@@ -117,13 +120,15 @@
 
             <section class="proj-section" id="shooting-mechanics">
                 <h2>Shooting Mechanics</h2>
-                <video width="50%" height="auto" controls muted>
-                    <source src="img/KartKlash/player-shoot-demo.mp4" type="video/mp4" alt="Demo Video showing player shooting features, recorded during the implementation of shootable targets.">
-                      Video cannot be played.
-                </video>
-                <figcaption>
-                    Demo Video showing player shooting features, recorded during the implementation of shootable targets.
-                </figcaption>
+                <div class="proj-media">
+                    <video height="auto" controls muted>
+                        <source src="img/KartKlash/player-shoot-demo.mp4" type="video/mp4" alt="Demo Video showing player shooting features, recorded during the implementation of shootable targets.">
+                          Video cannot be played.
+                    </video>
+                    <figcaption>
+                        Demo Video showing player shooting features, recorded during the implementation of shootable targets.
+                    </figcaption>
+                </div>
                 <br>
                 <p>
                     The player's shooting mechanic is the one of two key features that allows the player to interact with the world around them (the other being driving). During the conceptual phase, many iterations were designed to satisfy many different goals for the game, but we chose to settle on using a simple hitscan weapon with clear indicators for every interaction (outline, particles, etc). 
@@ -136,13 +141,16 @@
 
             <section class="proj-section" id="enemy-ai">
                 <h2>Enemy AI</h2>
-                <video width="50%" height="auto" controls muted>
-                    <source src="img/KartKlash/ai-demo.mp4" type="video/mp4" alt="Demo Video showing early NavMesh implementation with adjusted physics parameters to make the movement seem more vehicle-like.">
-                      Video cannot be played.
-                </video>
-                <figcaption>
-                    Demo Video showing early NavMesh implementation with adjusted physics parameters to make the movement seem more vehicle-like.
-                </figcaption>
+                <div class="proj-media">
+                    <h4>Movement</h4>
+                    <video height="auto" controls muted>
+                        <source src="img/KartKlash/ai-demo.mp4" type="video/mp4" alt="Demo Video showing early NavMesh implementation with adjusted physics parameters to make the movement seem more vehicle-like.">
+                          Video cannot be played.
+                    </video>
+                    <figcaption>
+                        Demo Video showing early NavMesh implementation with adjusted physics parameters to make the movement seem more vehicle-like.
+                    </figcaption>
+                </div>
                 <br>
                 <p>
                     As a team, we decided that enemy AI was necessary in order to introduce a chaotic and fast-pased experience for the player. Having worked with NavMeshes previously in <a href="akimbo-corps.html">Akimbo Corps,</a> I was confident in my ability to implement the package into our current project.
@@ -151,13 +159,17 @@
                 <p>
                     Similar to Akimbo Corps, this implementation utilizes a incrementing checkpoint system that guides the NavMeshAI from one point to another. Checkpoints for a given map are manually assigned to a list, which are then referenced by both the player and enemy GameObjects to determine their behaviours. As the checkpoints were made as track-wide hitboxes to account for the player's driving, enemies are given an extended stopping distance radius and randomized destination coordinates within the hitbox to ensure that enemies would not drive the same when compared to each other.
                 </p>
-                <video width="50%" height="auto" controls muted>
-                    <source src="img/KartKlash/ai-shoot-demo.mp4" type="video/mp4" alt="Demo Video sent to the team’s Discord showing AI Shooting Tracking and Animation.">
-                      Video cannot be played.
-                </video>
-                <figcaption>
-                    Demo Video sent to the team’s Discord showing AI Shooting Tracking and Animation.
-                </figcaption>
+
+                <div class="proj-media">
+                    <h4>Shooting</h4>
+                    <video height="auto" controls muted>
+                        <source src="img/KartKlash/ai-shoot-demo.mp4" type="video/mp4" alt="Demo Video sent to the team’s Discord showing AI Shooting Tracking and Animation.">
+                          Video cannot be played.
+                    </video>
+                    <figcaption>
+                        Demo Video sent to the team’s Discord showing AI Shooting Tracking and Animation.
+                    </figcaption>
+                </div>
                 <br>
                 <p>
                     The main function of enemy shooting is to provide the player with a higher level of opposition while racing in order to generate more competitive tension. As a behaviour, being shot by an enemy depletes the player's health - and when their health reaches 0, they experience a lockout period that prevents them from driving, indicated by a desaturation filter covering their view, as well as the animation of their health bar slowly refilling.
@@ -170,13 +182,15 @@
 
             <section class="proj-section" id="enemy-ai">
                 <h2>Graphics, Effects & Shaders</h2>
-                <video width="50%" height="auto" controls muted>
-                    <source src="img/KartKlash/urp-pp-demo.mp4" type="video/mp4" alt="URP Post-Processing Demo Video.">
-                      Video cannot be played.
-                </video>
-                <figcaption>
-                    URP Post-Processing Demo Video.
-                </figcaption>
+                <div class="proj-media">
+                    <video height="auto" controls muted>
+                        <source src="img/KartKlash/urp-pp-demo.mp4" type="video/mp4" alt="URP Post-Processing Demo Video.">
+                          Video cannot be played.
+                    </video>
+                    <figcaption>
+                        URP Post-Processing Demo Video.
+                    </figcaption>
+                </div>
                 <br>
                 <p>
                     In creating the look for this game, I wanted to create a retro arcade aesthetic while reducing the motion sickness that normally comes with certain effects like grain and posterization. To that end, I created a Toon Shader Graph within Unity with adjustable parameters for Color Depth and Effect Opacity, and underwent a lot of testing to ensure that the final effect captured retro visuals while not inducing motion sickness for a player.
@@ -187,11 +201,15 @@
                 </p>
     
                 <h2>UI Design</h2>
-                <img src="img/kartKlash/hit-indicator.png" alt="HUD Hit Indicator.">
-                <figcaption>HUD Hit Indicator</figcaption>
+                <div class="proj-media">
+                    <img src="img/kartKlash/hit-indicator.png" alt="HUD Hit Indicator.">
+                    <figcaption>HUD Hit Indicator</figcaption>
+                </div>
     
-                <img src="img/kartKlash/ui-screen.png" style="width: 40%;" alt="Final UI in Action.">
-                <figcaption>Final UI in Action</figcaption>
+                <div class="proj-media">
+                    <img src="img/kartKlash/ui-screen.png" style="width: 100%;" alt="Final UI in Action.">
+                    <figcaption>Final UI in Action</figcaption>
+                </div>
                 <br>
                 <p>
                     In designing the final UI for Kart Klash, my main challenge was in ensuring that player can quickly glance to see any important information within their peripheral vision, while ensuring they can see as far ahead as possible as drivers. In addition, a blue speed bar was added near the end of development so that players are clearly able to qualtify their motion, and recognize the tangible benefit from destroying the shootables across the map.

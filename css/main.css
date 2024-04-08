@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -23,6 +27,12 @@ img{
     font-weight: 700;
 }
 
+figcaption{
+    font-style: italic;
+    padding-left: 0.5rem;
+    border-left: 3px solid #DDDDDD;
+}
+
 nav a{
     font-family: 'Red Hat Display';
 }
@@ -43,6 +53,10 @@ footer{
 
 .footer-icon{
     max-width: 6rem !important;
+}
+
+footer ul li{
+    white-space: nowrap
 }
 
 .socials{
@@ -71,6 +85,10 @@ hr{
     color: #FFFFFFAA !important;
 }
 
+video{
+    width: 100%;
+}
+
 @media screen and (max-width: 992px) {
     footer{
         flex-direction: column;
@@ -78,28 +96,41 @@ hr{
 
     footer .container, footer ul{
         display: flex;
-        padding-left: 0;
+        padding: 0;
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media screen and (max-width: 992px) {
-    iframe, video{
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+    iframe{ width: 100%; }
 }
 
 @media screen and (max-width: 576px) {
-    iframe{
-        height: 240px;
-    }
+    iframe{ height: 240px; }
 }
 
 /* ----------------- INTERACTIVE ELEMENTS -------------------*/
 
 .proj-link img{
     max-width: 3rem !important;
+}
+
+.proj-section{
+    border-bottom: 3px solid #DDDDDD;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.proj-media{
+    width: 50%;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .proj-media{
+        width: 100%;
+    }
 }
 
 /* ----------------- COMBINED ELEMENTS -------------------*/
@@ -140,24 +171,38 @@ hr{
 
 .hero{
     display: flex;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../img/KartKlash/title.png");
+    min-height: calc(100vh - 4rem);
     background-size: cover;
     background-position: center;
-    align-items: end;
+    margin-bottom: 2rem;
 }
 
-.hero h1, .hero h2{
+.hero-titles{
+    position: absolute;
+    width: calc(100% - 4rem) !important;
+    left: 6rem;
+    top: 100vh;
+    transform: translateY(calc(-100% - 4rem));
+}
+
+.hero h1, .hero h2, .hero p{
     color: #FAFAFA;
+    width: 100%;
 }
 
 @media screen and (max-width: 992px) {
+    .hero-titles{ 
+        left: 4rem;
+    }
     .item img{
         flex: 0 0 50%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .hero-titles{ 
+        left: 2rem;
+    }
     .item a{
         flex-direction: column;
         gap: 0;
@@ -176,6 +221,10 @@ hr{
 }
 
 @media screen and (max-width: 576px) {
+    .hero-titles{ 
+        width: calc(100% - 0.5rem) !important;
+        left: 0.5rem;
+    }
     .item img, .item-desc{
         width: 100% !important;
     }
