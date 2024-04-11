@@ -103,7 +103,7 @@ let gameData = [
 ]
 
 gameData.forEach((data) => {
-	const parent = document.querySelector("#game");
+	const parent = document.querySelector("#games");
 	appendContent(parent, data);
 })
 
