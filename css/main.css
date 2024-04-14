@@ -1,5 +1,4 @@
 html{
-    overflow-x: hidden;
     scroll-behavior: smooth !important;
 }
 
@@ -10,12 +9,15 @@ body{
     font-weight: 300;
     margin: 0;
     background-color: #FFFAFA;
-    overflow-x: hidden;
     overflow-wrap: break-word;
 }
 
 section, #cv{
     scroll-margin-top: 8rem;
+}
+
+.proj-section{
+    scroll-margin-top: 5rem !important;
 }
 
 .element, .container{
@@ -24,6 +26,11 @@ section, #cv{
 
 img{
     max-width: 90vw;
+}
+
+hr, .vr{
+    border-width: 2px !important;
+    color: #FFFFFFAA !important;
 }
 
 /* ----------------- TEXT ELEMENTS -------------------*/
@@ -75,10 +82,8 @@ footer ul li{
     max-width: 2.5rem;
 }
 
-hr{
-    border-width: 2px !important;
+footer hr{
     width: 50%;
-    color: #FFFFFFAA !important;
 }
 
 .link-footer{
@@ -117,6 +122,18 @@ video{
 
 /* ----------------- INTERACTIVE ELEMENTS -------------------*/
 
+.sub-nav{
+    top: -2px !important;
+}
+
+.sub-nav-mobile{
+    display: none;
+}
+
+.sub-nav-mobile hr{
+    margin: 0.5rem auto !important;
+}
+
 .proj-link img{
     max-width: 3rem !important;
 }
@@ -135,6 +152,15 @@ video{
 @media screen and (max-width: 992px) {
     .proj-media{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sub-nav-desktop{
+        display: none;
+    }
+    .sub-nav-mobile{
+        display: block;
     }
 }
 
