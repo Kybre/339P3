@@ -74,9 +74,7 @@
             <div class="sub-nav-desktop">
                 <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
                     <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
-                    <li class="nav-item"><a class="nav-link" href="#shooting-mechanics">Shooting</a></li><div class="vr mx-1"></div>
-                    <li class="nav-item"><a class="nav-link" href="#enemy-ai">AI</a></li><div class="vr mx-1"></div>
-                    <li class="nav-item"><a class="nav-link" href="#graphics">Graphics</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#gameplay">Gameplay</a></li><div class="vr mx-1"></div>
                     <li class="nav-item"><a class="nav-link" href="#ui">UI</a></li><div class="vr mx-1"></div>
                     <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
                     <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
@@ -92,9 +90,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
-                            <li><a class="dropdown-item" href="#shooting-mechanics">Shooting</a></li><hr>
-                            <li><a class="dropdown-item" href="#enemy-ai">AI</a></li><hr>
-                            <li><a class="dropdown-item" href="#graphics">Graphics</a></li><hr>
+                            <li><a class="dropdown-item" href="#gameplay">Gameplay</a></li><hr>
                             <li><a class="dropdown-item" href="#ui">UI</a></li><hr>
                             <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
                             <li><a class="dropdown-item" href="#project-links">Links</a></li>
@@ -112,20 +108,98 @@
                 <br>
                 <h5>Collaborators:</h5>
                 <ul>
-                    <li>EJ Nicholas: Gameplay Designer/Developer, Tech Lead</li>
-                    <li>Enoch Hsieh: Level Designer, 3D & Environment Artist</li>
-                    <li>Ricky Lin: Sound Designer, Gameplay Programmer</li>
-                    <li>Irene Gao: Environment Artist</li>
-                    <li>Kajal Kajal: Web and Graphic Designer</li>
+                    <li>GGSEvan (Evan Sarkozi): Project Lead</li>
+                    <li>Xinnoh (Zak Zastera): Designer / Developer</li>
+                    <li>cubebox51 (Peter): Developer</li>
+                    <li>Sorceproject (Dave McIntyre): Narrative & Music</li>
                 </ul>
                 <br>
                 <h5>Tools Used:</h5>
                 <ul>
-                    <li>Unity (C#, Unity URP, Shader Graph, UnityVR)</li>
+                    <li>Unity (C#, Unity URP)</li>
                     <li>Figma</li>
                 </ul>
                 <br>
-                <h5>Duration: 4 Months (September 2023 - December 2023)</h5>
+                <h5>Duration: 2 Days (July 7th - 9th, 2023)</h5>
+            </section>
+
+            <section class="proj-section" id="project-screenshots">
+                <h2>Project Screenshots</h2>
+                <br>
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                <div id="projScreenshotCarousel" class="proj-media carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#projScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Screenshot 1"></button>
+                        <button type="button" data-bs-target="#projScreenshotCarousel" data-bs-slide-to="1" aria-label="Screenshot 2"></button>
+                        <button type="button" data-bs-target="#projScreenshotCarousel" data-bs-slide-to="2" aria-label="Screenshot 3"></button>
+                        <button type="button" data-bs-target="#projScreenshotCarousel" data-bs-slide-to="3" aria-label="Screenshot 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/Akimbo/gameplay1.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing the Preparation Phase">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Akimbo/gameplay2.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing units in action in Level 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Akimbo/gameplay3.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing units in action in Level 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Akimbo/gameplay4.png" class="d-block w-100" alt="Gameplay Screenshot for Akimbo Corps showing units in action in Level 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projScreenshotCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projScreenshotCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
+
+            <section class="proj-section" id="project-desc">
+                <h2>Project Description</h2>
+                <p>
+                    Akimbo Corps is a game created for the 2023 GMTK Jam under the theme of "Roles Reversed", where myself and a group of developers from SFU's Game Dev Club decided to attempt an approach to an anti-stealth game. The game went on to place in the top 25% of over 6,000 submissions.
+                </p>
+                <p>
+                    In Akimbo Corps, the player is responsible guarding a series of gang safehouses from maniacal, mass-murdering Supercops. Up to six different types of units with limited vision cones can be placed in order to prevent the four Supercops from reaching their destinations.
+                </p>
+                <p>
+                    My main responsibilities within this project were to design and implement player units and enemies, in addition to creating the main UI elements used throughout the game. My goals for this project were to depart from my usual comfort zone of 2D pixel games and delve into 3D, in addition to designing more complex systems.
+                </p>
+            </section>
+
+            <section class="proj-section" id="gameplay">
+                <h2>Gameplay</h2>
+                <h3>Designing Units and Enemies</h3>
+
+                <h3>Implementing Player Units</h3>
+
+                <h3>Enemy AI</h3>
+            </section>
+
+            <section class="proj-section" id="ui">
+                <h2>UI Design</h2>
+            </section>
+
+            <section class="proj-section" id="takeaways">
+                <h2>Takeaways</h2>
+                <p>
+                    Overall, I am extremely proud to have worked on this project with an outstanding team, and I believe this project strongly showcases our strengths.
+                </p>
+                <p>
+                    Through this project, I believe I've made significant strides in my abilities within Unity, as well as my understanding of their render pipelines, post-processing systems, particles, and especially their VR package. As a designer, I have also gained a more in-depth understanding on how to design interactions within immersive environments, VR or not, and was able to further sharpen my understanding of how players interact with games and their core mechanics.
+                </p>
+            </section>
+
+            <section class="proj-section" id="project-links">
+                <h2>Project Links</h2>
+                <a href="https://ggsevan.itch.io/akimbo-corps" class="proj-link text-decoration-none me-2">
+                    <img src="img/icons/newWindow.png" alt="itch.io Link for Akimbo Corps">
+                </a>
             </section>
         </div>
 

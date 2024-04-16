@@ -44,21 +44,21 @@ let gameData = [
 		tools:"Unity, C#",
 		link:"akimbo-corps.html",
 	},
-//	{
-//		img:"./img/GPPE/title.png",
-//		title:"The Great Peking Peak Escape",
-//		ctgr:"Game Design / Development Project",
-//		content:"A platformer centered around a grappling hook, where players must climb the walls of a kitchen to escape their cruel fate of becoming someone else's dinner. [Page WIP]",
-//		tools:"Unity, C#",
-//		link:"",
-//	},
+	{
+		img:"./img/GPPE/title.png",
+		title:"The Great Peking Peak Escape",
+		ctgr:"Game Design / Development Project",
+		content:"A platformer centered around a grappling hook, where players must climb the walls of a kitchen to escape their cruel fate of becoming someone else's dinner.",
+		tools:"Unity, C#",
+		link:"gppe.html",
+	},
 	{
 		img:"./img/ToA/cover.png", //image
 		title:"Tower of Ash",
 		ctgr:"Game Design / Development Project",
 		content:"A roguelite metroidvania platformer developed in Unity for IAT 410 - Advanced Game Design.", //content
 		tools:"Unity, C#",
-		link:"tower-of-ash",
+		link:"tower-of-ash.html",
 	},
 	{
 		img:"./img/Unfabled/cover.png",
@@ -66,7 +66,7 @@ let gameData = [
 		ctgr:"Game Design / Development Project",
 		content:"A fast-paced, spell-slinging action game developed in Unity for Ludum Dare 49. \n Rated Top 20% Overall in the Jam category.",
 		tools:"Unity, C#",
-		link:"unfabled",
+		link:"unfabled.html",
 	},
 	{
 		img:"./img/MonkeyMobius/title.png",
@@ -74,7 +74,7 @@ let gameData = [
 		ctgr:"Game Design / Development Project",
 		content:"An infinite-themed puzzle game developed in Unity for the 2021 BC Game Jam. \n Winner of the Jam via the Participant's Choice award.",
 		tools:"Unity, C#",
-		link:"monkey-mobius",
+		link:"monkey-mobius.html",
 	},
 	{
 		img:"./img/HellGene/title.png",
@@ -82,7 +82,7 @@ let gameData = [
 		ctgr:"Game Design / Development Project",
 		content:"A chaos-themed, top-down hack and slash developed in Unity for Brackey's Game Jam 2021.2.",
 		tools:"Unity, C#",
-		link:"hell-gene",
+		link:"hell-gene.html",
 	},
 	{
 		img: "./img/EiSC/title.png",
@@ -90,7 +90,7 @@ let gameData = [
 		ctgr: "Game Design / Development Project",
 		content: "An emergency-themed platformer developed in Unity for the May 2021 Make-A-Level Game Jam.",
 		tools:"Unity, C#",
-		link: "emergency-in-section-c"
+		link: "emergency-in-section-c.html"
 	},
 	{
 		img: "./img/Kingslayer/Kingslayer.png",
@@ -98,8 +98,12 @@ let gameData = [
 		ctgr: "Game Design / Development Project",
 		content: "A high-action, platformer bullet hell game developed in Processing.",
 		tools:"Processing",
-		link: "kingslayer"
+		link: "kingslayer.html"
 	},
+]
+
+let archive = [ //for future use
+	
 ]
 
 gameData.forEach((data) => {
