@@ -122,6 +122,10 @@ video{
 
 /* ----------------- INTERACTIVE ELEMENTS -------------------*/
 
+.bio-icon{
+    max-width: 3rem !important;
+}
+
 .sub-nav{
     top: -2px !important;
 }
@@ -156,7 +160,7 @@ video{
 }
 
 @media screen and (max-width: 576px) {
-    .sub-nav-desktop{
+    .sub-nav-desktop, .bio-info{
         display: none;
     }
     .sub-nav-mobile{
@@ -218,7 +222,7 @@ video{
 
 .hero h1, .hero h2, .hero p{
     color: #FAFAFA;
-    width: 100%;
+    width: calc(100% - 6rem);
 }
 
 @media screen and (max-width: 1200px) {
@@ -230,6 +234,9 @@ video{
 @media screen and (max-width: 992px) {
     .hero-titles{ 
         left: 4rem;
+    }
+    .hero h2, .hero p{
+        width: 100%;
     }
 }
 
@@ -259,12 +266,11 @@ video{
 }
 
 @media screen and (max-width: 576px) {
-    .hero-titles{ 
-        width: calc(100% - 0.5rem) !important;
-        left: 0.5rem;
+    .hero-titles{
+        margin-right: 2rem;
     }
     #bio .hero-titles{
-        transform: translateY(-100%);
+        transform: translateY(-100%-2rem);
     }
     .item img, .item-desc{
         width: 100% !important;
