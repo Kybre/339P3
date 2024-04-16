@@ -194,6 +194,12 @@ video{
     border-radius: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .proj-media{
+        width: 75%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .proj-media{
         width: 100%;
