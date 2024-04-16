@@ -181,6 +181,10 @@ video{
     margin-top: 1rem;
 }
 
+.thin-2col{
+    width: 62.5%;
+}
+
 .proj-media-2col{
     width: 80%;
     gap: 2em;
@@ -198,6 +202,9 @@ video{
     .proj-media{
         width: 75%;
     }
+    .thin-2col{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -213,6 +220,12 @@ video{
     .proj-media-2col{
         width: 100%;
         flex-direction: column;
+    }
+
+    .proj-media-2col img{
+        display: block;
+        width: 50% !important;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 576px) {
