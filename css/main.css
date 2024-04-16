@@ -13,7 +13,7 @@ body{
 }
 
 section, #cv{
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 1rem;
 }
 
 .proj-section{
@@ -26,6 +26,10 @@ section, #cv{
 
 img{
     max-width: 90vw;
+}
+
+ul li::marker{
+    font-size: 0.6em;
 }
 
 hr, .vr{
@@ -42,7 +46,7 @@ hr, .vr{
 figcaption{
     font-style: italic;
     padding-left: 0.5rem;
-    border-left: 3px solid #DDDDDD;
+    border-left: 2px solid #DDDDDD;
 }
 
 nav a{
@@ -65,6 +69,10 @@ footer{
 
 .footer-icon{
     max-width: 6rem !important;
+}
+
+footer ul{
+    list-style-type: none;
 }
 
 footer ul li{
@@ -126,6 +134,21 @@ video{
     max-width: 3rem !important;
 }
 
+.cv-box{
+    border: 2px solid #DDDDDD;
+    border-radius: 16px;
+}
+
+.cv-box hr{
+    color: #DDDDDD !important; 
+    opacity: 1 !important;
+}
+
+.cv-icon{
+    max-width: 2rem !important;
+    max-height: 2rem !important;
+}
+
 .sub-nav{
     top: -2px !important;
 }
@@ -143,7 +166,7 @@ video{
 }
 
 .proj-section{
-    border-bottom: 3px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
@@ -181,7 +204,7 @@ video{
 
 .item h1{
     margin-bottom: 0;
-    border-bottom: 3px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
 }
 
 .item a{
@@ -191,7 +214,7 @@ video{
     padding: 2rem 6rem;
     text-decoration: none;
     color: #000000;
-    border-bottom: 3px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
     background-color: #F0F0F0;
     transition: background-color 0.5s ease-in-out;
 }
@@ -274,5 +297,11 @@ video{
     }
     .item img, .item-desc{
         width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .contact-info{
+        flex-direction: column;
     }
 }
