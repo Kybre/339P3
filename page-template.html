@@ -4,7 +4,7 @@
 
         <meta charset="utf-8">
         <title>Page Template</title>
-        <link rel="icon" type="image/x-icon" href="./img/whiteicon.png">
+        <link rel="icon" type="image/x-icon" href="./img/icons/whiteicon.png">
 
         <!--https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices-->
         <meta content="width=device-width, initial-scale=1" name="viewport"> 
@@ -20,7 +20,6 @@
     <body>
         <!-- HEADER -->
         <header>
-            <!-- HEADER -->
             <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
                 <div class="container-fluid">
                     <!-- Logo -->
@@ -61,15 +60,63 @@
         </header>
 
         <!-- CONTENT -->
+        <!-- Hero Banner -->
+        <div class="container-fluid hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('./img/KartKlash/title.png');">
+            <div class="container hero-titles">
+                <h1 class="display-1">Kart Klash</h1>
+                <h2>VR Design / Development Project</h2>
+            </div>
+        </div>
+
+        <!-- Sub Nav -->
+        <nav class="sub-nav navbar d-flex justify-content-center sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <!-- Desktop -->
+            <div class="sub-nav-desktop">
+                <ul class="d-flex navbar-nav mx-auto subnav-menu text-center">
+                    <li class="nav-item"><a class="nav-link" href="#project-intro">Intro</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#shooting-mechanics">Shooting</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#enemy-ai">AI</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#graphics">Graphics</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#ui">UI</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#takeaways">Takeaways</a></li><div class="vr mx-1"></div>
+                    <li class="nav-item"><a class="nav-link" href="#project-links">Links</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile -->
+            <div class="sub-nav-mobile w-50">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#project-intro">Intro</a></li><hr>
+                            <li><a class="dropdown-item" href="#shooting-mechanics">Shooting</a></li><hr>
+                            <li><a class="dropdown-item" href="#enemy-ai">AI</a></li><hr>
+                            <li><a class="dropdown-item" href="#graphics">Graphics</a></li><hr>
+                            <li><a class="dropdown-item" href="#ui">UI</a></li><hr>
+                            <li><a class="dropdown-item" href="#takeaways">Takeaways</a></li><hr>
+                            <li><a class="dropdown-item" href="#project-links">Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container"></div>
 
         <!-- FOOTER -->
         <footer class="container-fluid d-flex bg-primary">
             <div class="container w-20">
-                <a href="index.html"><img src="./img/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
+                <a href="index.html"><img src="./img/icons/whiteicon.png" class="img-fluid footer-icon" alt="Logo"></a>
                 <div class="socials">
-                    <a href="#"><img class="socials-icon" src="./img/githubIcon.png" alt="GitHub Icon"></a>
-                    <a href="#"><img class="socials-icon" src="./img/linkedinIcon.png" alt="LinkedIn Icon"></a>
+                    <a href="https://github.com/Kybre">
+                        <img class="socials-icon" src="./img/icons/githubIconLight.png" alt="GitHub Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/herman-chan-0312/">
+                        <img class="socials-icon" src="./img/icons/linkedinIconLight.png" alt="LinkedIn Icon">
+                    </a>
                 </div>
             </div>
 
