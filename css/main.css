@@ -221,12 +221,6 @@ video{
         width: 100%;
         flex-direction: column;
     }
-
-    .proj-media-2col img{
-        display: block;
-        width: 50% !important;
-        margin: 0 auto;
-    }
 }
 @media screen and (max-width: 576px) {
     .proj-media-small{
@@ -302,14 +296,14 @@ video{
     .item img{
         flex: 0 0 50%;
     }
+    .hero h1, .hero h2, .hero p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .hero-titles{ 
         left: 4rem;
-    }
-    .hero h2, .hero p{
-        width: 100%;
     }
 }
 

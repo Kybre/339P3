@@ -111,14 +111,76 @@
                 </section>
             
                 <section class="element">
-                    <h3>Sample Hyperlinked Image</h3>
-                    <a href="#"><img src="https://placehold.co/600x400?text=Placeholder+Image" alt="Test Image"></a>
+                    <h3>Sample Hyperlinked Image with Figcaption</h3>
+                    <a href="#">
+                        <img src="https://placehold.co/600x400?text=Placeholder+Image" alt="Test Image">
+                        <figcaption>Image obtained from: https://placehold.co/</figcaption>
+                    </a>
                     <!--Image obtained from: https://placehold.co/-->
+                </section>
+
+                <section class="element">
+                    <h3>Sample Video</h3>
+                    <div class="proj-media">
+                        <video height="auto" controls muted>
+                            <source src="./img/MonkeyMobius/portal.mp4" type="video/mp4" alt="Sample video">
+                              Video cannot be played.
+                        </video>
+                        <figcaption>
+                            Sample video figcaption.
+                        </figcaption>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <h3>Sample Audio</h3>
+                    <div class="proj-media">
+                        <audio controls class="mt-2">
+                            <source src="./audio/ShootFX.mp3" type="audio/mp3"> Audio isn't supported on this browser.
+                        </audio>
+                        <figcaption>Sample audio figcaption.</figcaption>
+                    </div>
+                </section>
+
+                <section class="element">
+                    <h3>Image Carousel</h3>
+                <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ -->
+                    <div id="sample-carousel" class="proj-media carousel carousel-dark slide carousel-fade mt-4">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#sample-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#sample-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://placehold.co/600x400?text=Sample+Slide+1" class="d-block w-75 mx-auto mb-5" alt="Sample slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/600x400?text=Sample+Slide+2" class="d-block w-75 mx-auto mb-5" alt="Sample slide 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="mb-0">
+                                        This is an image with a sample caption.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#boss-anim-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#boss-anim-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
             </section>
 
             <section id="colors" class="element">
                 <h2><u>COLORS</u></h2>
+                <h5 class="display-6">Primary Color - #202020</h5>
+                <h1>Background Color - #FAFAFA</h1>
             </section>
 
             <section id="text-elements" class="element">
@@ -297,7 +359,7 @@
             <section id="citations" class="element">
                 <h2>Citations</h2>
                 <ul>
-                    <li>(Former Portfolio)</li>
+                    <li>Chan, Herman. <li>Herman Chan's Portfolio,</li> 2022, kybre.github.io/. </li>
                 </ul>
             </section>
         </div>
