@@ -77,14 +77,6 @@ let gameData = [
 		link:"monkey-mobius.html",
 	},
 	{
-		img:"./img/HellGene/title.png",
-		title:"Hell Gene",
-		ctgr:"Game Design / Development Project",
-		content:"A chaos-themed, top-down hack and slash developed in Unity for Brackey's Game Jam 2021.2.",
-		tools:"Unity, C#",
-		link:"hell-gene.html",
-	},
-	{
 		img: "./img/EiSC/title.png",
 		title: "Emergency in Section C",
 		ctgr: "Game Design / Development Project",
@@ -103,7 +95,22 @@ let gameData = [
 ]
 
 let archive = [ //for future use
-	
+	{
+		img: "./img/MineDiamonds/MineDiamonds.png",
+		title: "Mine Diamonds",
+		ctgr: "Arduino Design/Development Project",
+		content: "An interactive application made with Arduino and Processing.",
+		tools: "Arduino",
+		link: "mine-diamonds"
+	},
+	{
+		img:"./img/HellGene/title.png",
+		title:"Hell Gene",
+		ctgr:"Game Design / Development Project",
+		content:"A chaos-themed, top-down hack and slash developed in Unity for Brackey's Game Jam 2021.2.",
+		tools:"Unity, C#",
+		link:"hell-gene.html",
+	},
 ]
 
 gameData.forEach((data) => {
