@@ -357,7 +357,7 @@ video{
     .contact-info{
         flex-direction: column;
     }
-    .xs-img{
+    .xs-img, audio{
         width: 100%;
     }
 }
