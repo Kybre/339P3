@@ -15,7 +15,7 @@ let otherData = [
 		ctgr:"UI / UX Project",
 		content:"A children's mental health journal created during Hack4Health 2021.",
 		tools:"Figma",
-		link:"scrapbook",
+		link:"scrapbook.html",
 	},
 	{
 		img: "./img/KMSRT/kmsrt.png",
@@ -23,7 +23,7 @@ let otherData = [
 		ctgr: "Web Design / Development Project",
 		content: "A fictional website for the Kalmont Mountain Safety and Rescue Team Website containing local news and tips and tricks on winter outdoors safety.",
 		tools:"HTML/CSS",
-		link: "kmsrt"
+		link: "kmsrt.html"
 	},
 ]
 
